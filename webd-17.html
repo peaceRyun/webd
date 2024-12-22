@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>웹디자인기능사 레이아웃 E-1</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            #wrap {
+                width: 100%;
+                height: 100%;
+            }
+            #main {
+                width: 100%;
+                height: calc(100vh - 120px);
+                display: flex;
+                background-color: yellow;
+            }
+            #aside {
+                width: 200px;
+                height: 100%;
+                background-color: red;
+            }
+            #aside #logo {
+                width: 100%;
+                height: 100px;
+                background-color: pink;
+            }
+            #aside #nav {
+                width: 100%;
+                height: calc(100% - 100px);
+                background-color: orange;
+            }
+            .banner {
+                width: 400px;
+                height: 100%;
+                background-color: palegoldenrod;
+            }
+            .banner .content1 {
+                width: 100%;
+                height: 150px;
+                background-color: lightcoral;
+            }
+            .banner .content2 {
+                width: 100%;
+                height: calc(100% - 300px);
+            }
+            .banner .content2-1 {
+                width: 100%;
+                height: 50%;
+                background-color: lightgray;
+            }
+            .banner .content2-2 {
+                width: 100%;
+                height: 50%;
+                background-color: lightpink;
+            }
+            .banner .content3 {
+                width: 100%;
+                height: 150px;
+                background-color: lightblue;
+            }
+            .slider {
+                width: calc(100% - 600px);
+                background-color: blue;
+            }
+
+            #footer {
+                width: 100%;
+                display: flex;
+            }
+            #footer .logo {
+                width: 200px;
+                height: 120px;
+                background-color: lightgreen;
+            }
+            #footer .lcwrap {
+                width: calc(100% - 200px);
+                height: 120px;
+            }
+            #footer .lcwrap .link {
+                height: 50%;
+                background-color: lightseagreen;
+            }
+            #footer .lcwrap .copyright {
+                height: 50%;
+                background-color: lightsteelblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <main id="main">
+                <div id="aside">
+                    <div id="logo"></div>
+                    <div id="nav"></div>
+                </div>
+                <div class="banner">
+                    <div class="content1"></div>
+                    <div class="content2">
+                        <div class="content2-1"></div>
+                        <div class="content2-2"></div>
+                    </div>
+                    <div class="content3"></div>
+                </div>
+                <div class="slider"></div>
+            </main>
+
+            <div id="footer">
+                <div class="logo"></div>
+                <div class="lcwrap">
+                    <div class="link"></div>
+                    <div class="copyright"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
